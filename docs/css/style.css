@@ -1691,6 +1691,13 @@ input[type="radio"] .styled:checked+label::after {
 	border-radius: 35px;
 }
 
+/** Intro text floating above banner image. */
+.intro-text {
+    padding: 1em 0;
+    background-color: rgba(0, 0, 0, .4);
+    font-weight: normal;
+}
+
 /** Generic Section **/
 .section {
     padding-top: 2em;
@@ -1729,7 +1736,7 @@ input[type="radio"] .styled:checked+label::after {
     color: #050303;
     line-height: 46px;
     border-bottom: #0fc690 solid 1px;
-    width: 410px;
+    max-width: 410px;
     margin-bottom: 20px;
 }
 /** End of Generic Section **/
