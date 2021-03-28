@@ -9,7 +9,12 @@
   text-align: initial !important;
 }
 
-/* Caption to appear at the bottom of the image. */
+/**
+ * Banner caption location.
+ *
+ * Caption to appear at the bottom of the banner image rather than in the
+ * middle.
+ */
 .banner .carousel-caption {
   left: 0;
   right: 0;
@@ -18,17 +23,25 @@
   text-align: initial;
 }
 
-/* Bootstrap medium breakpoint and above. */
+/* Bootstrap Extra-small and Small breakpoints. */
+@media screen and (max-width: 767px) {
+  /* Edge to edge banner image in smaller displays. */
+  .banner.container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+}
+
+/* Bootstrap Medium breakpoint and above. */
 @media screen and (min-width: 768px) {
-  /* Banner image to sit at the left. */
+  /* Banner image should be left aligned. */
   .banner > .carousel-item {
-    padding-left: 3em;
     text-align: initial;
   }
 
   /* Caption width should match image width which is 640px at the moment. */
   .banner .carousel-caption {
     width: 640px;
-    left: 3em;
   }
 }
