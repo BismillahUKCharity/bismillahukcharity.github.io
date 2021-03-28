@@ -1,0 +1,34 @@
+/**
+ * Style rule overrides.
+ *
+ * Site specific overrides of the Wise template's style rules.
+ */
+
+/* Left aligned site logo. */
+.header .logo {
+  text-align: initial !important;
+}
+
+/* Caption to appear at the bottom of the image. */
+.banner .carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 0;
+  text-align: initial;
+}
+
+/* Bootstrap medium breakpoint and above. */
+@media screen and (min-width: 768px) {
+  /* Banner image to sit at the left. */
+  .banner > .carousel-item {
+    padding-left: 3em;
+    text-align: initial;
+  }
+
+  /* Caption width should match image width which is 640px at the moment. */
+  .banner .carousel-caption {
+    width: 640px;
+    left: 3em;
+  }
+}

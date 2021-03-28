@@ -1693,9 +1693,10 @@ input[type="radio"] .styled:checked+label::after {
 
 /** Intro text floating above banner image. */
 .intro-text {
-    padding: 1em 0;
+    padding: 1em;
     background-color: rgba(0, 0, 0, .4);
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 /** Generic Section **/
