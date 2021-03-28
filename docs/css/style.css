@@ -1672,7 +1672,7 @@ input[type="radio"] .styled:checked+label::after {
 	background: #000;
 }
 
-#myCarousel a.carousel-control-next {
+.carousel a.carousel-control-next {
 	position: absolute;
 	top: 40% !important;
 	left: inherit !important;
@@ -1682,7 +1682,7 @@ input[type="radio"] .styled:checked+label::after {
 	border-radius: 35px;
 }
 
-#myCarousel a.carousel-control-prev {
+.carousel a.carousel-control-prev {
 	position: absolute;
 	top: 40% !important;
 	left: -22px !important;
@@ -1691,12 +1691,22 @@ input[type="radio"] .styled:checked+label::after {
 	border-radius: 35px;
 }
 
-/** Intro text floating above banner image. */
-.intro-text {
-    padding: 1em;
-    background-color: rgba(0, 0, 0, .4);
-    font-weight: normal;
-    margin-bottom: 0;
+/**
+ * Fixed height for the gallery image carousel.
+ *
+ * This carousel comprises images with unequal heights.
+ */
+.section--gallery.carousel {
+    height: 35em;
+}
+/* Corrugated iron and smiling man photo. */
+.section--gallery.carousel .carousel-item > img.corrugated-iron {
+    width: 165px;
+    height: 300px;
+}
+/* Youtube video: Ramadan food distribution. */
+.section--gallery.carousel .carousel-item > iframe.video {
+   max-width: 100%;
 }
 
 /** Generic Section **/
@@ -2369,8 +2379,8 @@ ul.contant_icon li img {
 
 /** slider arrow **/
 
-#myCarousel .carousel-control-prev,
-#myCarousel .carousel-control-next {
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
 	width: 62px;
 	height: 60px;
 	background: #fffdfd;
@@ -2379,22 +2389,22 @@ ul.contant_icon li img {
 	color: #000;
 }
 
-#myCarousel .carousel-control-prev:hover,
-#myCarousel .carousel-control-next:hover,
-#myCarousel .carousel-control-prev:focus,
-#myCarousel .carousel-control-next:focus {
+.carousel .carousel-control-prev:hover,
+.carousel .carousel-control-next:hover,
+.carousel .carousel-control-prev:focus,
+.carousel .carousel-control-next:focus {
 	background: #0fc690;
 	color: #fff;
 }
 
-#myCarousel a.carousel-control-prev {
+.carousel a.carousel-control-prev {
 	position: absolute;
 	left: 82px;
 	bottom: 10px;
 	top: inherit;
 }
 
-#myCarousel a.carousel-control-next {
+.carousel a.carousel-control-next {
 	position: absolute;
 	left: 10px;
 	top: inherit;

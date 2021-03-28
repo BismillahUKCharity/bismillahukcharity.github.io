@@ -10,17 +10,21 @@
 }
 
 /**
- * Banner caption location.
+ * Carousel caption location.
  *
- * Caption to appear at the bottom of the banner image rather than in the
- * middle.
+ * Image captions to appear at the bottom of carousel images rather than in
+ * the middle.
  */
-.banner .carousel-caption {
+.carousel-caption {
   left: 0;
   right: 0;
   bottom: 0;
-  padding-bottom: 0;
+  margin-bottom: 0;
+  padding: 1em 1em 0;
+
+  font-weight: normal;
   text-align: initial;
+  background-color: rgba(0, 0, 0, .4);
 }
 
 /* Bootstrap Extra-small and Small breakpoints. */
