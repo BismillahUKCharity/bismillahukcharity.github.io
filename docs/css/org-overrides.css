@@ -27,6 +27,11 @@
   background-color: rgba(0, 0, 0, .4);
 }
 
+/* A paragraph with very tall lines. */
+.tall-p-300 {
+  line-height: 300px;
+}
+
 /* Bootstrap Extra-small and Small breakpoints. */
 @media screen and (max-width: 767px) {
   /* Edge to edge banner image in smaller displays. */
