@@ -10,7 +10,7 @@
 }
 
 /**
- * Carousel caption location.
+ * Carousel caption positioning.
  *
  * Image captions to appear at the bottom of carousel images rather than in
  * the middle.
@@ -25,6 +25,21 @@
   font-weight: normal;
   text-align: initial;
   background-color: rgba(0, 0, 0, .4);
+}
+/* Because the caption has a dark background. */
+.carousel-caption a {
+  color: white;
+}
+
+/**
+ * Video carousel caption positioning.
+ *
+ * For video captions, we slide down even further to avoid any overlap with the
+ * video.  Any overlap renders the video controls useless.
+ */
+.carousel-caption.video-caption {
+  position: initial;
+  padding-bottom: 0.15em;
 }
 
 /* A paragraph with very tall lines. */
@@ -52,5 +67,20 @@
   /* Caption width should match image width which is 640px at the moment. */
   .banner .carousel-caption {
     width: 640px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .carousel .carousel-item > img {
+    width: unset;
+    height: 250px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel .carousel-item > img {
+    width: unset;
+    height: 400px;
   }
 }

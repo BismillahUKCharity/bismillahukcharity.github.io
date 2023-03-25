@@ -1694,19 +1694,18 @@ input[type="radio"] .styled:checked+label::after {
 /**
  * Fixed height for the gallery image carousel.
  *
- * This carousel comprises images with unequal heights.
+ * This carousel comprises items with unequal heights.
  */
-.section--gallery.carousel {
-    height: 35em;
+.mixed-carousel.carousel {
+    height: 36em;
 }
-/* Corrugated iron and smiling man photo. */
-.section--gallery.carousel .carousel-item > img.corrugated-iron {
-    width: 165px;
-    height: 300px;
+/* Youtube videos. */
+.mixed-carousel.carousel .carousel-item > iframe.video {
+    max-width: 100%;
 }
-/* Youtube video: Ramadan food distribution. */
-.section--gallery.carousel .carousel-item > iframe.video {
-   max-width: 100%;
+/* Generic height for all carousel images. */
+.carousel .carousel-item > img {
+    height: 27.8em;
 }
 
 /** Generic Section **/
