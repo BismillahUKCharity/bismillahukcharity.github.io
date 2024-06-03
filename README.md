@@ -1,4 +1,4 @@
-Under-construction website for the Bismillah UK Charity.
+Website for the [Bismillah UK Charity](https://www.bismillahukcharity.org.uk).
 
 UK Charity registration number: [1188224](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5150275/)
 
