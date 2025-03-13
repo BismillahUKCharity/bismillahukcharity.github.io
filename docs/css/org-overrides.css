@@ -64,9 +64,9 @@
     text-align: initial;
   }
 
-  /* Caption width should match image width which is 640px at the moment. */
+  /* Caption width should match image width which is 1000px at the moment. */
   .banner .carousel-caption {
-    width: 640px;
+    width: 1000px;
   }
 }
 
